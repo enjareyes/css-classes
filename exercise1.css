@@ -1,0 +1,53 @@
+
+body {
+  color: white;
+  max-width: 800px;
+}
+
+header {
+  background-color: #FFCC99;
+  height: 50px;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+aside {
+  float: left;
+  padding-left: 1%;
+  padding-top: 1%;
+  background-color: #ffb732;
+  width: 19%;
+  height: 200px;
+}
+
+/*
+We added float: left to the .sidebar. 
+.sidebar is moved all the way to the left of its parent container/the page. 
+For this one, it doesn't look much different than where it was before, 
+because it was already on the left. Second, it is now only as wide as its 
+content—but it's still display: block, just a floated block element!
+
+Now the other block elements act as if .sidebar has magically vanished. 
+Imagine that .sidebar is now on a z-index, like it's floating closer to you, 
+a level above all the block elements. .content is like, "what sidebar? 
+we don't have a sidebar on this webpage!". .content is now appearing where it 
+would be if there actually was no sidebar at all.
+*/
+
+
+.content {
+  background-color: #587498;
+  height: 200px;
+  width: 79%;
+  margin-left: 20%;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+footer {
+  background-color: #99CC00;
+  clear: left;
+  height: 50px;
+  padding-left: 1%;
+  padding-top: 1%;
+}
